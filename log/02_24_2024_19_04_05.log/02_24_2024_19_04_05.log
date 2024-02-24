@@ -1,0 +1,4 @@
+[2024-02-24 19:04:12,556] 21 root -INFO Strating Data Ingestion
+[2024-02-24 19:04:12,689] 24 root -INFO Row Data Reading Complete
+[2024-02-24 19:04:13,448] 30 root -INFO train test split is Complete
+[2024-02-24 19:04:14,095] 34 root -INFO Data Ingestion is Completed

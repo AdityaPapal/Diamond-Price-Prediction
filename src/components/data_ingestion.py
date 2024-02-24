@@ -2,17 +2,18 @@ import os
 import sys
 import pandas as pd
 from dataclasses import dataclass
-from src.logger import logging
+
 from src.exception import CustomException
+from src.logger import logging
 from sklearn.model_selection import train_test_split
 
 
 # Data Configuration
 class DataIngestionConfig():
     def __init__(self):
-        train_data_path = os.path.join("artifact","train.csv")
-        test_data_path = os.path.join("artifact","test.csv")
-        row_data_path = os.path.join("artifact","row.csv")
+        train_data_path = os.path.join("artifacts","train.csv")
+        test_data_path = os.path.join("artifacts","test.csv")
+        row_data_path = os.path.join("artifacts","row.csv")
 
 # DataFrame
 class DataIngestion():

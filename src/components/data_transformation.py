@@ -49,9 +49,9 @@ class DataTransformation:
             # Categorigal Pipeline
             cat_pipeline=Pipeline(
                 steps=[
-                ('imputer',SimpleImputer(strategy='most_frequent')),
-                ('ordinalencoder',OrdinalEncoder(categories=[cut_categories,color_categories,clarity_categories])),
-                ('scaler',StandardScaler())
+                    ('imputer',SimpleImputer(strategy='most_frequent')),
+                    ('ordinalencoder',OrdinalEncoder(categories=[cut_categories,color_categories,clarity_categories])),
+                    ('scaler',StandardScaler())
                 ]
 
             )
@@ -84,7 +84,7 @@ class DataTransformation:
             preprocessing_obj = self.get_data_transformation_object()
 
             target_column_name = 'price'
-            drop_columns = [target_column_name,'id']
+            drop_columns = [target_column_name]
 
             input_feature_train_df = train_df.drop(columns=drop_columns,axis=1)
             target_feature_train_df=train_df[target_column_name]

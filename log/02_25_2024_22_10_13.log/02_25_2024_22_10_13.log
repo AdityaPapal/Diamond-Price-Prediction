@@ -1,0 +1,179 @@
+[2024-02-25 22:10:15,638] 96 werkzeug -INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.102:8080
+[2024-02-25 22:10:15,638] 96 werkzeug -INFO [33mPress CTRL+C to quit[0m
+[2024-02-25 22:12:28,147] 828 app -ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 11, in home_page
+    return render_template("index.html")
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-02-25 22:12:28,163] 96 werkzeug -INFO 127.0.0.1 - - [25/Feb/2024 22:12:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-02-25 22:12:28,386] 96 werkzeug -INFO 127.0.0.1 - - [25/Feb/2024 22:12:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-02-25 22:12:41,707] 96 werkzeug -ERROR 192.168.1.102 - - [25/Feb/2024 22:12:41] code 400, message Bad request version ('\x02h2\x08http/1.1\x003\x00+\x00)')
+[2024-02-25 22:12:41,707] 96 werkzeug -INFO 192.168.1.102 - - [25/Feb/2024 22:12:41] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03xÛÀèk5\x8aæ\x1c0 A¶x¥ÅI\x93\x92O>×\x15=\x89\x12\x9e+Ý\x9eX\x86 m­Ñ\x19hy®(Ð\x18ÂUYDhUú\x11µ²d¬r(µcö)ù'\x12\x83\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x1a\x1a\x00\x00\x00#\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x00+\x00)[0m" HTTPStatus.BAD_REQUEST -
+[2024-02-25 22:12:41,709] 96 werkzeug -ERROR 192.168.1.102 - - [25/Feb/2024 22:12:41] code 400, message Bad request version ('\x00')
+[2024-02-25 22:12:41,710] 96 werkzeug -INFO 192.168.1.102 - - [25/Feb/2024 22:12:41] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03XxÓ_E]\x0e§WÓ¹;¸vw\x03è\x1c~þ¡s\x9c½\x9f¡Ð\x95ý»\x87T ]°½W¥\x84öÔk\x1d¸7dïèaY\x9bT#O\x0fÕ\x8dÃB\x99\x8fü6\x87\x85\x00 [0m" HTTPStatus.BAD_REQUEST -
+[2024-02-25 22:12:43,934] 828 app -ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 11, in home_page
+    return render_template("index.html")
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-02-25 22:12:43,935] 96 werkzeug -INFO 192.168.1.102 - - [25/Feb/2024 22:12:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-02-25 22:12:44,051] 96 werkzeug -INFO 192.168.1.102 - - [25/Feb/2024 22:12:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2024-02-25 22:13:47,824] 828 app -ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 11, in home_page
+    return render_template("index.html")
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-02-25 22:13:47,826] 96 werkzeug -INFO 127.0.0.1 - - [25/Feb/2024 22:13:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-02-25 22:13:49,667] 828 app -ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 11, in home_page
+    return render_template("index.html")
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-02-25 22:13:49,669] 96 werkzeug -INFO 127.0.0.1 - - [25/Feb/2024 22:13:49] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-02-25 22:13:50,123] 828 app -ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 11, in home_page
+    return render_template("index.html")
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-02-25 22:13:50,125] 96 werkzeug -INFO 127.0.0.1 - - [25/Feb/2024 22:13:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[2024-02-25 22:13:50,338] 828 app -ERROR Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "app.py", line 11, in home_page
+    return render_template("index.html")
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\DevOps\Project\Diamond Price Prediction\Diamond-Price-Prediction\env\lib\site-packages\flask\templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[2024-02-25 22:13:50,341] 96 werkzeug -INFO 127.0.0.1 - - [25/Feb/2024 22:13:50] "[35m[1mGET / HTTP/1.1[0m" 500 -

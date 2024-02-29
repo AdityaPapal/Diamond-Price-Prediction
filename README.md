@@ -14,5 +14,5 @@ conda activate /env
 or 
 
 ```
-sources activate ./env
+source activate ./env
 ```

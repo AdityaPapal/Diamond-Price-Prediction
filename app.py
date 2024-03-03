@@ -35,3 +35,5 @@ def predict_datapoint():
 
 if __name__ == '__main__':
     application.run(debug=True)
+
+# http://127.0.0.1:5000
